@@ -9,8 +9,12 @@ import Footer from './components/Footer'
 
 
 function App() {
+  const refreshPage = ()=> {
+    window.location.reload();
+ }
+
   return <div>
-    <Navbar />
+    <Navbar onload={refreshPage} />
     <Home />
     <About />
     <Porfolio />

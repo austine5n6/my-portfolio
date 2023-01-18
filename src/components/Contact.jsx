@@ -1,4 +1,4 @@
-import React, { useState, } from 'react'
+import React, { useEffect, useState, } from 'react'
 
 const Contact = () => {
  
@@ -6,29 +6,19 @@ const Contact = () => {
     const [form_email, setEmail] = useState("")
     const [form_message, setformMessage] = useState("")
   
-//     const refreshPage = () => {
-//         window.location.reload();
-//    }
+    const refreshPage = () => {
+        window.location.reload();
+   }
 
    const handleClick = () => {
-        this.setState({
-            form_name: [""],
-            form_email: [""],
-            form_message: [""]
-        })
-        // setName("");
-        // setEmail("");
-        // setformMessage("");
-     
+        setName("")
+        setEmail("")
+        setformMessage("")
     }
-//    useEffect(() => {
- 
-//     let interval = setInterval(() => refreshPage(), 2000);
-//     return () => {
-//       // setInterval cleared when component unmounts
-//       clearInterval(interval);
-//     }
-// }, [])
+    useEffect(() => {
+        let interval = setInterval(() => refreshPage(), 2000)
+        clearInterval(interval)
+    },[form_name, form_email, form_message])
 
   return (
   <div name="contact" className="w-full h-screen bg-gradient-to-b
@@ -66,8 +56,9 @@ const Contact = () => {
                  <textarea 
                  name="message"
                  type="text" 
-                 value = {form_message}
+                 value={form_message}
                  onChange={(e) => setformMessage(e.target.value)}
+                 required
                  rows="10" 
                  className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                  >

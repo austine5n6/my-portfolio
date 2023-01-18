@@ -16,7 +16,7 @@ const Porfolio = () => {
             id: 2,
             src: tweetclone,
             title: "Tweetclone",
-            details: "A twitter likeaike website, with functionality that includes followers, retweet and posts.",
+            details: "A twitter lookalike website, with functionality that includes followers, retweet and posts.",
             site: "https://github.com/austine5n6/tweetclone",
             demo: "https://tweetcloneapp.netlify.app/"
         },

@@ -1,6 +1,8 @@
 import React from 'react'
 import nabteb from '../assets/portfolio/nabteb.PNG'
 import tweetclone from '../assets/portfolio/tweetclone.png'
+import nabteb_javascript from '../assets/portfolio/nabteb_javascript.png'
+
 
 const Porfolio = () => {
     const portfolios = [
@@ -9,8 +11,8 @@ const Porfolio = () => {
             src: nabteb,
             title: "nabteb bulk printing software",
             details: "A photoalbulm printing software of students details for NABTEB.",
-            site: "https://github.com/austine5n6/nabteb-bulk-print",
-            demo: "https://github.com/austine5n6/nabteb-bulk-print"
+            site: "https://github.com/austine5n6/nabteb-java",
+            demo: "https://github.com/austine5n6/nabteb-java"
         },
         {
             id: 2,
@@ -19,6 +21,14 @@ const Porfolio = () => {
             details: "A twitter lookalike website, with functionality that includes followers, retweet and posts.",
             site: "https://github.com/austine5n6/tweetclone",
             demo: "https://tweetcloneapp.netlify.app/"
+        },
+        {
+            id: 3,
+            src: nabteb_javascript,
+            title: "nabteb photo-album update",
+            details: "A twitter lookalike website, with functionality that includes followers, retweet and posts.",
+            site: "https://github.com/austine5n6/nabteb-java",
+            demo: "https://github.com/austine5n6/nabteb-java"
         },
     
           

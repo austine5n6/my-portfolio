@@ -13,7 +13,7 @@ const Home = () => {
                     I'm a Full Stack Developer
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md">
-                I have <b>2 years</b> experience building web applications using front-end 
+                I have <b>3 years</b> experience building web applications using front-end 
                 frameworks such as Reactjs and Vuejs, and ExpressJs for backend development and custom api development.
                .
                 </p>

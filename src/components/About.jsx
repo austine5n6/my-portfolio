@@ -8,7 +8,7 @@ const About = () => {
                 <p className="text-4xl font-bold inline border-b-4">About</p>
             </div>
             <p text-xl mt-20>
-                My name is Austin Ogbeide, with <b>2 years</b> experience in building web applications. 
+                My name is Austin Ogbeide, with <b>3 years</b> experience in building web applications. 
                 Clear understanding of object oriented programming and training in both Java and Javascript programming with
                 BSc in Computer science.
                 <br />

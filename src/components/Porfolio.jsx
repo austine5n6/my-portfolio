@@ -1,7 +1,7 @@
 import React from 'react'
 import nabteb from '../assets/portfolio/nabteb.PNG'
 import tweetclone from '../assets/portfolio/tweetclone.png'
-import nabteb_javascript from '../assets/portfolio/nabteb_javascript.png'
+import nabteb_javascript from '../assets/portfolio/nabteb_javascript.PNG'
 
 
 const Porfolio = () => {
@@ -25,8 +25,8 @@ const Porfolio = () => {
         {
             id: 3,
             src: nabteb_javascript,
-            title: "nabteb photo-album update",
-            details: "A twitter lookalike website, with functionality that includes followers, retweet and posts.",
+            title: "nabteb photo-album updated software",
+            details: "Updated Nabteb photoalbum software",
             site: "https://github.com/austine5n6/nabteb-java",
             demo: "https://github.com/austine5n6/nabteb-java"
         },

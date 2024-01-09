@@ -1,7 +1,8 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaHome, FaInfo, FaUpload, FaSearch } from 'react-icons/fa'
+import {Link} from 'react-router-dom';
+// import { HiOutlineMail } from 'react-icons/hi'
+// import { BsFillPersonLinesFill } from 'react-icons/bs'
 // import resume from "%PUBLIC_URL%/my_CV.pdf"
 
 const SocialLinks = () => {
@@ -10,58 +11,60 @@ const SocialLinks = () => {
             id: 1,
             child: (
                 <>
-                LinkedIn <FaLinkedin size={30}/>
+                Home <FaHome size={30}/>
                 </>
             ),
-            href: 'https://linkedin.com/in/osazee-austin-ogbeide-013380188',
+            link: "/",
             style: 'rounded-tr-md'
         },
         {
           id: 2,
           child: (
               <>
-              Twitter <FaTwitter size={30}/>
+              About <FaInfo size={30}/>
               </>
           ),
-          href: "https://www.twitter.com/@AustinOgbeide"
+          link: "/about"
+          
       }, 
 
         {
             id: 3,
             child: (
                 <>
-                Github <FaGithub size={30}/>
+                Upload Dataset <FaUpload size={30}/>
                 </>
             ),
-            href: 'https://github.com/austine5n6',
+            link: "/dataset"
+          
            
         },
         {
             id: 4,
             child: (
                 <>
-                Mail <HiOutlineMail size={30}/>
+                Url check <FaSearch size={30}/>
                 </>
             ),
-            href: 'mailto:austinesocool@outlook.com',
+            link: "/urlcheck",
         },
-        {
-            id: 5,
-            child: (
-                <>
-                Resume <BsFillPersonLinesFill size={30}/>
-                </>
-            ),
-            href: "/resume.pdf",
-            style: 'rounded-br-md',
-            download: true,
-        },
+      //   {
+      //       id: 5,
+      //       child: (
+      //           <>
+      //           Resume <BsFillPersonLinesFill size={30}/>
+      //           </>
+      //       ),
+      //       href: "/resume.pdf",
+      //       style: 'rounded-br-md',
+      //       download: true,
+      //   },
       
     ]
     return (
         <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
           <ul>
-            {links.map(({ id, child, href, style, download }) => (
+            {links.map(({ id, child, link, style, download }) => (
               <li
                 key={id}
                 className={
@@ -70,15 +73,14 @@ const SocialLinks = () => {
                   style
                 }
               >
-                <a
-                  href={href}
+                <Link
+                  to={link}
                   className="flex justify-between items-center w-full text-white"
                   download={download}
-                  target="_blank"
                   rel="noreferrer"
                 >
                   {child}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

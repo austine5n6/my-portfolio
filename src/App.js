@@ -1,28 +1,27 @@
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Experience from './components/Experience'
-import Porfolio from './components/Porfolio'
-import Contact from './components/Contact'
-import SocialLinks from './components/SocialLinks'
-import Footer from './components/Footer'
+import React from 'react';
+import Home from './components/Home';
+import Upload from './components/Upload';
+import SocialLinks from './components/SocialLinks';
+import Footer from './components/Footer';
+import About from './components/About';
+import Url from './components/Url';
 
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  
-  return <div>
-    <Navbar />
-    <Home />
-    <About />
-    <Porfolio />
-    <Experience />
-    <Contact />
-    <Footer />
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dataset" element={<Upload />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/urlcheck" element={<Url />} />
+      </Routes>
 
-    <SocialLinks /> 
-  
-</div>;
-  
-};
+      <Footer />
+      <SocialLinks />
+    </div>
+  );
+}
 
 export default App;

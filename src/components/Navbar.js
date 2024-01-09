@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
             <div>
                 <Link to="home" smooth duration={50}>
-                <h1 className="text-5xl font-signature ml-2 cursor-pointer"> Austin</h1>
+                <h1 className="text-5xl font-signature ml-2 cursor-pointer"> Secure url shield</h1>
                 </Link>
             </div>
     
